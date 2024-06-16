@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 170px;
+    background: #292F36;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.title_header span{
+    color: #12F7D6;
+    font-family: 'IBM Plex Mono';
+    font-size: 32px;
+}
+
+.title_header{
+    color: #fff;
+    font-family: 'IBM Plex Mono';
+    font-size: 32px;
+}
+
+ul{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+hr{
+    width: 80%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #43454D;
+}
+
+/* Main */
+
+.main{
+    width: 100%;
+    height: 1352px;
+    display: flex;
+    flex-direction: column;
+    background: #292F36;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.title_main{
+    font-family: 'Ubuntu';
+    font-size: 117px;
+    color: #98FAEC;
+}
+
+/* Menu */
+
+.menu{
+    width: 64px;
+    height: 316px;
+    display: grid;
+    grid-template-columns: 40px;
+    grid-template-rows: repeat(6, 45px);
+    grid-gap: 20px;
+    background: #1A1E23;
+    outline: 1px solid #ffffff;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: fixed;
+    margin-left: 3%;
+    top: 30%;
+    z-index: 2;
+}
+
+.menu a{
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    border-radius: 250px;
+    padding-top: 7px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover, .menu:focus, .menu a.active{
+    background-color: #292F36;
+}
+
+.menu i{
+    font-size: 16px;
+}
+
+.menu a:focus {
+    outline: none;
+}
+
+/* Block Profile */
+
+.block_profile{
+    width: 25%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 4px solid white;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: -3px -5px 2px #12F7D6;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    word-break: break-all;
+}
+
+.block_photo_profile{
+    width: 160px;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.title_profile{
+    font-family: 'IBM Plex Mono';
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.subtitle_profile{
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    color: #fff;
+}
+
+.block_profile > img{
+    width: 13px;
+    height: 11px;
+}
+
+.block_profile > p{
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    color: #fff;
+}
+
+.html_and_css_profile span{
+    color: #000;
+    background: #12F7D6;
+    font-size: 14px;
+    border-radius: 250px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Block Main */
+
+.block_main{
+    width: 80%;
+    height: 378px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_info{
+    width: 60%;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title_info{
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Ubuntu';
+}
+
+.title_info span{
+    color: #12F7D6;
+}
+
+.subtitle_info{
+    color: #fff;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button_info{
+    color: #12F7D6;
+    font-family: 'IBM Plex Mono';
+    text-decoration: none;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 387px;
+    padding-right: 30px;
+}
+
+/* Block results */
+
+.block_results{
+    width: 25%;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #1A1E23;
+    border-radius: 80px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Blocks with text results */
+
+.block_results p{
+    color: #fff;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+}
+
+.block_results span{
+    font-size: 48px;
+    color: #12F7D6;
+    font-weight: 500;
+    font-family: 'IBM Plex Mono';
+}
+
+.block_text_results_program{
+    width: 189px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block_text_results_developer{
+    width: 189px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.block_text_results_developer p{
+    margin-left: 17px;
+}
+
+.block_text_results_years{
+    width: 189px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.block_text_results_years p{
+    margin-left: 20px;
+}
+
+/* Section About Me */
+
+.section_about_me{
+    width: 100%;
+    height: 1352px;
+    background: #1A1E23;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 20%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section_about_me:before{
+    z-index: -1;
+    content: url(../img/bg_about_me.png);
+    opacity: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title_about_me{
+    width: 38%;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff;
+    padding: 10px;
+    background: #292F36;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    text-align: center;
+    outline: 4px solid #12F7D6;
+}
+
+.subtitle_about_me{
+    width: 85%;
+    color: #fff;
+    font-family: 'IBM Plex Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #292F36;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border-radius: 40px;
+    word-break: break-all;
+}
+
+.subtitle_about_me .title_subtitle{
+    font-size: 32px;
+    color: #12F7D6;
+}
+
+.subtitle_about_me span{
+    font-size: 16px;
+    color: #12F7D6;
+}
+
+picture{
+    margin: 15%;
+}
+
+/* Skills */
+
+.skills{
+    width: 100%;
+    height: 705px;
+    background: #292F36;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.skills:before{
+    content: url(../img/bg_skills.png);
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 10%;
+}
+
+.title_skills{
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    color: #12F7D6;
+    font-weight: 400;
+}
+
+.subtitle_skills{
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 550px;
+    font-weight: 400;
+}
+
+/* Block develop */
+
+.block_web_develop{
+    width: 288px;
+    height: 132px;
+    background: #98FAEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'IBM Plex Mono';
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 8px solid #0C73B8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.title_block_web{
+    font-size: 24px;
+    line-height: 32px;
+    color: #292F36;
+}
+
+.subtitle_block_web{
+    font-size: 16px;
+    line-height: 20px;
+    color: #43454D;
+}
+
+/* Block lang */
+
+.block_lang{
+    width: 688px;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+}
+
+.block_html{
+    width: 144px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E54F26;
+}
+
+.block_css{
+    width: 144px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #0C73B8;
+}
+
+.block_js{
+    width: 144px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E7A020;
+}
+
+/*  */
+
+/* Works */
+
+.works{
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: #1A1E23;
+    overflow: hidden;
+}
+
+.works::before{
+    content: url(../img/bg_works.png);
+    z-index: -1;
+    position: absolute;
+    opacity: 30%;
+}
+
+.title_works{
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    color: #12F7D6;
+    font-weight: 400;
+}
+
+.subtitle_works{
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 850px;
+    font-weight: 400;
+}
+
+/* block works */
+
+.block_works{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.work1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 2;
+    background: #D9D9D9;
+    padding: 2%;
+    border-radius: 50px;
+}
+
+.title_work1{
+    font-size: 42px;
+    font-family: 'Ubuntu';
+}
+
+.work1 img{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.work2{
+    width: 26%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 1;
+    background: #D9D9D9;
+    padding: 2%;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+.title_work2{
+    font-size: 24px;
+    font-family: 'Ubuntu';
+}
+
+.work2 img{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.work3{
+    width: 26%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 3;
+    background: #D9D9D9;
+    padding: 2%;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+.work3 img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+/* Contacts */
+
+.contacts{
+    width: 100%;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #1A1E23;
+    align-items: center;
+    position: relative;
+}
+
+.title_contacts{
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    color: #12F7D6;
+    font-weight: 400;
+}
+
+.subtitle_contacts{
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 720px;
+    font-weight: 400;
+}
+
+h1{
+    outline: 2px solid #12F7D6;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'IBM Plex Mono';
+    color: #12F7D6;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.contacts form{
+    width: 37%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form label{
+    width: 195px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Ubuntu';
+    color: #12F7D6;
+}
+
+form label:nth-child(3){
+    width: 480px;
+}
+
+.contacts > form > label > input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #98FAEC;
+    display: flex;
+    padding-bottom: 10px;
+    outline: none;
+}
+
+.contacts > form > label > input, select, textarea{
+    color: #fff;
+}
+
+.contacts > form > label > input::placeholder{
+    color: #fff;
+}
+
+.send_message_contacts{
+    width: 70%;
+    height: 56px;
+    padding: 25px;
+    background: #12F7D6;
+    border-radius: 32px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15%;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 48px;
+    background: #1A1E23;
+    border-top: 1px solid #43454D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer .p_footer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+footer .icons_footer{
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p span{
+    color: #12F7D6;
+    text-decoration: underline;
+}
+
+.design{
+    font-size: 16px;
+}
+
+/* END */

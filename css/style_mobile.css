@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+
+    .header{
+        height: 68px;
+    }
+
+    .title_header{
+        font-size: 16px;
+    }
+
+    .title_header span{
+        font-size: 16px;
+    }
+
+    ul{
+        width: 25%;
+    }
+
+    /* Menu */
+
+    .menu{
+        display: none;
+    }
+
+    /* Main */
+
+    .block_profile{
+        width: 60%;
+        word-break: break-all;
+        margin-top: 20px;
+    }
+
+    .title_main{
+        display: none;
+    }
+
+    .block_main{
+        width: 75%;
+        height: 788px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block_info{
+        width: 100%;
+        height: 298px;
+    }
+
+    .title_info{
+        font-size: 32px;
+    }
+    
+    .block_results{
+        width: 60%;
+    }
+
+    /* picture */
+
+    picture{
+        width: 272px;
+        height: 325px;
+    }
+
+    picture img{
+        width: 272px;
+        height: 325px;
+    }
+
+    /* section about me */
+
+    .section_about_me{
+        height: 1121px;
+    }
+
+    .title_about_me{
+        width: 52%;
+        text-align: center;
+        font-size: 32px;
+        margin-left: 15%;
+    }
+
+    /* block lang */
+
+    .skills{
+        height: 800px;
+    }
+
+    .subtitle_skills{
+        bottom: 650px;
+    }
+
+    .block_lang{
+        width: 80%;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* block_works */
+
+    .block_works{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .work1, .work2, .work3{
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    .work1{
+        order: -1;
+    }
+
+    .work1 img{
+        width: 90%;
+    }
+
+    .work2 img{
+        width: 90%;
+    }
+
+    .work3 img{
+        width: 90%;
+    }
+
+    .title_work1{
+        font-size: 20px;
+    }
+
+    .title_work2{
+        font-size: 20px;
+    }
+
+    /* contacts */
+    
+    .contacts h1{
+        font-size: 16px;
+    }
+
+    .contacts form{
+        width: 80%;
+    }
+    
+    .contacts label{
+        width: 45%;
+    }
+
+    .send_message_contacts{
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    /* footer */
+
+    footer{
+        height: 182px;
+        flex-direction: column;
+    }
+
+    footer .icons_footer{
+        order: -1;
+        height: 20%;
+    }
+
+    footer .p_footer{
+        width: 90%;
+        height: 50%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}

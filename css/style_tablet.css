@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    
+    /* Header */
+
+    .header{
+        height: 80px;
+        justify-content: space-around;
+    }
+
+    .title_header{
+        font-size: 24px;
+    }
+
+    .title_header span{
+        font-size: 24px;
+    }
+    
+    ul{
+        width: 15%;
+    
+    }
+
+    /* Menu */
+
+    .menu{
+        display: none;
+    }
+
+    /* Main */
+
+    .block_profile{
+        width: 40%;
+        word-break: break-all;
+    }
+
+    .title_main{
+        display: none;
+    }
+
+    .block_main{
+        width: 75%;
+        height: 788px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block_info{
+        width: 100%;
+    }
+    
+    .block_results{
+        width: 40%;
+    }
+
+    /* Section about me */
+
+    .title_about_me{
+        width: 60%;
+    }
+
+    picture{
+        margin: 5%;
+    }
+
+    /* Block works */
+
+    .block_works{
+        width: 100%;
+    }
+
+    .work1{
+        width: 35%;
+    }
+
+    .work2{
+        width: 25%;
+    }
+
+    .work3{
+        width: 25%;
+    }
+
+    /* Form */
+
+    .contacts form{
+        width: 70%;
+    }
+
+    form label:nth-child(3){
+        width: 600px;
+    }
+
+    /* block lang */
+
+    .block_lang{
+        width: 80%;
+    }
+
+    .block_html{
+        width: 25%;
+    }
+
+    .block_css{
+        width: 25%;
+    }
+
+    .block_js{
+        width: 25%;
+    }
+
+    h1{
+        width: 80%;
+    }
+
+    /* footer */
+
+    footer{
+        height: 140px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    footer .p_footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icons_footer{
+        order: -1;
+    }
+
+    footer .icons_footer{
+        height: 50%;
+    }
+}
+
